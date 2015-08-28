@@ -1,0 +1,29 @@
+#game {
+  -webkit-perspective: 100vmin;
+  -moz-perspective: 100vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -35vmin;
+  margin-left: -35vmin;
+  width: 70vmin;
+  height: 70vmin; }
+
+#cube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25.92593vmin;
+  margin-left: -25.92593vmin;
+  height: 51.85185vmin;
+  width: 51.85185vmin;
+  -webkit-transition: -webkit-transform .5s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: -moz-transform .5s;
+  -moz-transform-style: preserve-3d; }
+
+.face {
+  position: absolute;
+  background-color: #999; }
+
+/*# sourceMappingURL=main.css.map */

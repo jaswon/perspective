@@ -1,0 +1,49 @@
+$size:      70vmin;
+$adjsize:    1 / (1 / $size + 1 / 200);
+
+#game {
+    -webkit-perspective: 100vmin;
+    -moz-perspective: 100vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: ($size / -2);
+    margin-left: ($size / -2);
+    width: $size;
+    height: $size;
+}
+
+#cube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: ($adjsize / -2);
+    margin-left: ($adjsize / -2);
+    height: $adjsize;
+    width: $adjsize;
+    -webkit-transition: -webkit-transform .5s;
+    -webkit-transform-style: preserve-3d;
+    // -webkit-backface-visibility: hidden;
+    -moz-transition: -moz-transform .5s;
+    -moz-transform-style: preserve-3d;
+    // -moz-backface-visibility: hidden;
+}
+
+.face {
+    position: absolute;
+    background-color: #999;
+}
+//
+// .face {
+//     position: absolute;
+//     height: $adjsize;
+//     width: $adjsize;
+//     background-color: rgba(100,100,100,.2);
+// }
+//
+// #cube .one      {-webkit-transform: rotateX(90deg) translateZ($adjsize / 2);}
+// #cube .two      {-webkit-transform: rotateX(90deg) translateZ($adjsize / -2);}
+// #cube .three    {-webkit-transform: rotateY(90deg) translateZ($adjsize / 2);}
+// #cube .four     {-webkit-transform: rotateY(90deg) translateZ($adjsize / -2);}
+// #cube .five     {-webkit-transform: rotateZ(90deg) translateZ($adjsize / 2);}
+// #cube .six      {-webkit-transform: rotateZ(90deg) translateZ($adjsize / -2);}
